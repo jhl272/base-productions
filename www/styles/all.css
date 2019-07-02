@@ -1,0 +1,966 @@
+/* General styling */
+
+@font-face {
+  font-family: cg;
+  src: url("cg.ttf");
+}
+
+#citationlink {
+  font-size: 10px;
+  text-align: center;
+}
+
+#sidebar a:hover {
+  opacity: 0.5;
+}
+
+html {
+  font-family: cg;
+}
+
+.blurb {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: left;
+  margin-bottom: 1em;
+}
+
+@media (min-width: 1050px){
+  .blurb{
+    margin-left: 7em;
+}
+}
+
+#contactBlurb{
+  font-size: 14px;
+  color: black;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.topblurb {
+  font-size: 14px;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
+.blurb span {
+  font-weight: bold;
+  color: red;
+}
+
+#mainheader{
+  background: url(../images/indexcover2.jpg) no-repeat center center;
+  background-size: cover;
+  height: 700px;
+  /* margin-left: 13%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+#title {
+  font-family: cg;
+  display: block;
+  text-align: center;
+  margin: 0;
+  color: #00B1E2;
+  font-size: 500%;
+  padding: .2em;
+  /* text-shadow: 3px 3px 8px #000000; */
+  background-color: black;
+  /* opacity: .9;
+  background-color: gray; */
+}
+
+h2 {
+  font-size: 65px;
+  color: #00B1E2;
+}
+
+/* navbar */
+#sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 13%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  padding-top: 60px;
+  /* background-color: black; */
+  /* border-right: 2px solid white; */
+}
+
+#logolink {
+  margin: 0;
+}
+
+#logo {
+  height: 65px;
+  width: auto;
+  margin-bottom: 30px;
+}
+
+#sidebar div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+hr {
+  width: 80%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.navlink {
+  text-decoration: none;
+  color: white;
+  font-size: 110%;
+  text-align: center;
+  padding: 5%;
+}
+
+#bottombar {
+  flex-direction: row;
+  position: absolute;
+  bottom: 20%;
+  text-align: center;
+}
+
+#bottombar a {
+  text-decoration: none;
+  color: white;
+  padding-right: 15px;
+  padding-left: 15px;
+  text-align: center;
+  font-size: 13px;
+}
+
+#bottombar a:hover {
+  color: gray;
+}
+
+#sidebar .navlink:hover {
+  font-weight: bold;
+}
+
+#tickets{
+  border-left: 1px solid white;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#audition{
+  border-left: 1px solid white;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#eboard{
+  border-left: 1px solid white;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* footer */
+footer {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: black;
+  height: 250px;
+  position: relative;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* margin-left: 13%; */
+}
+
+.socialmedia {
+  width: 40px;
+  height: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+footer a:hover {
+  opacity: 0.6;
+}
+
+#socialmedianavbox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 8%;
+}
+
+.socialmedianav {
+  width: 70%;
+  height: 70%;
+}
+
+#socialmedianavbox a:hover {
+  opacity: 0.5;
+}
+
+#copyright {
+  color: white;
+  position: absolute;
+  bottom: 0;
+  font-size: 12px;
+}
+
+/* index.html */
+#middle {
+  padding: 5% 10%;
+}
+
+#meeting-times {
+  display: flex;
+  justify-content: center;
+}
+
+#map {
+  width: 80%;
+  height: 80%;
+}
+
+#mapbox {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+table {
+  text-align: center;
+  border: 1px solid black;
+  height: 100%;
+}
+
+tr {
+  border: 1px solid black;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+td {
+  width: 200px;
+}
+
+#middle p strong {
+  color: #e27c00;
+}
+
+#middle p em {
+  font-weight: bold;
+}
+
+#middle p {
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+#teamphoto {
+  width: 50%;
+  height: 40%;
+  border-radius: 10px;
+}
+
+#submiddle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.slideshowImageHolder {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+#slideshowImage {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.slideshowButtonHolder {
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-bottom: 50px;
+}
+
+.slideshowNextButton a{
+  color: #00B1E2;
+}
+
+.slideshowNextButton {
+  text-align: center;
+  padding: 10px;
+  border: 2px white solid;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: black;
+}
+
+/* #schedule h4 {
+text-align: center;
+font-size: 40px;
+margin-left: 0;
+margin-right: 0;
+margin-top: 50px;
+margin-bottom: 5px;
+flex: 1;
+} */
+
+#middle h3 {
+  font-size: 50px;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-top: 50px;
+}
+
+#scheduling {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 3%;
+}
+
+#scheduling div {
+  flex: 1;
+}
+
+#usermessage {
+  resize: none;
+  height: 150px;
+  vertical-align: top;
+}
+
+
+/* contact us section begins here */
+/* This is the header */
+#contactus {
+  text-align: center;
+}
+/* This is the form */
+#contactUs {
+  padding: 5% 10%;
+}
+
+#contactdiv {
+  align-items: center;
+}
+
+.infoForm {
+  text-align: right;
+  margin-right: 30%;
+}
+
+.infoForm div {
+  display: block;
+  margin-top: 1px;
+  padding: .3em;
+}
+
+.infoForm input {
+  width: 150px;
+}
+
+#contactUs .Submit {
+  margin-right: 20%;
+}
+
+textarea{
+  color: #7d7a7e;
+  border-color: #aaaaaa;
+  width: 150px;
+}
+
+@media (max-width: 1050px) {
+
+  #FormSubmit {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #usermessage {
+    width: 50%;
+  }
+
+  .infoForm{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 0%;
+  }
+
+  #contactUs .Submit{
+    width: 100%;
+    text-align: center;
+  }
+
+  #contactUs label {
+    display: block;
+    text-align: left;
+    margin-right: 0.25em;
+  }
+
+  #contactUs input, #contactUs textarea {
+    width: 100%;
+    color: #7d7a7e;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #aaaaaa;
+  }
+
+  #sidebar .navlink{
+    padding: 0;
+    width: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  /* #logolink {
+  display: none;
+  } */
+
+  #sidebar {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 50px;
+    /* z-index: 1; */
+    top: 0;
+    overflow: hidden;
+    padding: 0;
+    background-color: black;
+    align-items: center;
+  }
+
+  #title {
+    font-size: 3em;
+  }
+
+  #logo {
+    margin-bottom: 0;
+    margin-right: 10%;
+    display: flex;
+    flex-grow: 1;
+    margin-left: 10%;
+  }
+
+  #sidebar hr {
+    display: none;
+  }
+
+  #socialmedianavbox a {
+    display: none;
+  }
+
+  #mainheader {
+    height: 300px;
+  }
+
+  h2, h3 {
+    text-align: center;
+    font-size: 300%;
+  }
+
+  #submiddle {
+    flex-direction: column;
+  }
+
+  #submiddle p {
+    text-align: center;
+  }
+
+  #scheduling {
+    flex-direction: column;
+  }
+
+  #scheduling p {
+    text-align: center;
+  }
+
+  #teamphoto {
+    margin-top: 5%;
+    width: 100%;
+  }
+
+  table {
+    margin-top: 5%;
+  }
+
+  #slideshowImage {
+    margin-top: 5%;
+  }
+}
+/* ticketform.html */
+
+.performance {
+  display: flex;
+  flex-grow: 2;
+  margin-top: 3%;
+  padding-top: 0%;
+  border: 1px double solid;
+  border-radius: 1em;
+  border-color: #00B1E2;
+}
+
+/* .performance .time {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 0;
+margin-bottom: 0;
+} */
+
+.leftside {
+  display: flex;
+  flex-grow: 1;
+  padding-left: 10%;
+}
+
+.rightside {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap: wrap;
+  /* padding-right: 10%; */
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.rightside p {
+  color: black;
+  font-size: 125%;
+  text-align: left;
+}
+
+.center{
+  font-size: 125%;
+  text-align: center;
+}
+
+.special {
+  /*color: #e27c00;*/
+  color: #00B1E2;
+  font-weight: bold;
+}
+
+.form {
+  flex-wrap: wrap;
+  text-align: right;
+  margin-right: 40%;
+  color: #00B1E2;
+  font-weight: bold;
+  border: double 1px black;
+  border-radius: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  padding: 3em;
+  padding-right: 3em;
+  width: 50%;
+}
+
+.personalInfoForm {
+  text-align: right;
+  padding: .3em;
+  margin-right: 30%;
+}
+
+.personalInfoForm div {
+  margin-top: 1px;
+  padding: .3em;
+}
+
+#ticketHeader{
+  height: 450px;
+  margin-bottom: 0%;
+  display: flex;
+  background: url(../images/p6.jpg) no-repeat center center;
+  background-size: cover;
+  /* margin-left: 13%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#ticketImage {
+  height: 300px;
+  width: auto;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1em;
+}
+
+#tFormHeader {
+  font-size: 180%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+.tFormSubmitContainer {
+  text-align: center;
+  margin-top: .75em;
+  color: #00B1E2;
+}
+
+.personalInfo {
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.personalInfo div {
+  display: flex;
+  justify-content: right;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.creditCard {
+  flex-grow: 1;
+  margin-right: 0%;
+}
+
+@media (max-width: 1050px) {
+
+  #ticketHeader {
+    height: 300px;
+  }
+  .personalInfoTicket {
+    text-align: center;
+  }
+
+  .personalInfoForm {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 0em;
+    margin-left: 0em;
+  }
+
+  .personalInfoForm label {
+    display: block;
+    text-align: left;
+    margin-right: 0.25em;
+  }
+
+  .personalInfoForm input , .personalInfoForm select {
+    width: 100%;
+    color: #7d7a7e;
+    border-style: solid;
+    border-width: 0.05em;
+    border-color: #aaaaaa;
+  }
+
+  #ticketImage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* auditionform.html */
+
+#auditionHeader{
+  height: 450px;
+  margin-bottom: 0%;
+  display: flex;
+  background: url(../images/p5.jpg) no-repeat center center;
+  background-size: cover;
+  /* margin-left: 13%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#auditionImage {
+  height: 400px;
+  width: 400px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-radius: 1em;
+}
+
+#aFormHeader {
+  font-size: 180%;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+
+#special {
+  /*color: #e27c00;*/
+  color: #00B1E2;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.personalInfo {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.danceInfo {
+  display: flex;
+  flex-grow: 1;
+  margin-right: 0%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#auditionbutton {
+  text-align: center;
+}
+
+.error {
+  text-align: center;
+}
+
+#yearFeedback, #danceError {
+  color: red;
+  font-size: 12px;
+}
+
+.FAQ {
+  padding: 1% 10%;
+}
+
+.FAQ dt{
+  padding: 10px;
+  font-weight: bold;
+}
+
+h3{
+  color: #00B1E2;
+  font-size: 50px;
+}
+
+@media (max-width: 1050px){
+
+  #auditionHeader {
+    height: 300px;
+  }
+  .personalInfo div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftside{
+    padding-left: 0;
+  }
+
+  #auditionImage {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 100%;
+  }
+}
+
+/* eboard.html */
+#eboardHeader{
+  height: 450px;
+  margin-bottom: 0%;
+  display: flex;
+  background: url(../images/teamphoto.jpg) no-repeat center center;
+  background-size: cover;
+  /* margin-left: 13%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  padding: 5% 10%;
+}
+
+.intro h1 {
+  font-size: 65px;
+  color: #00B1E2;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+}
+
+.eboard1, .eboard2, .eboard3 {
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+  align-items: flex-start;
+}
+
+.bio h3{
+  color:#00B1E2;
+  font-size: 28px;
+  margin-top: 10px;
+  padding: 0;
+}
+
+#eboard1, #eboard2 {
+  border-radius: 5px;
+  width: 250px;
+
+}
+@media screen and (max-width: 1050px) {
+
+  #eboardHeader {
+    height: 300px;
+  }
+  .eboard1, .eboard2, .eboard3 {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+    align-items: center;
+  }
+
+  .bio {
+    padding: 5% 10%;
+  }
+
+  .bio h3 {
+    font-size: 40px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  .bio p {
+    text-align: center;
+  }
+
+  .main {
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 5%;
+  }
+
+}
+
+
+/*Feedback*/
+.feedback {
+  font-weight: bold;
+  color: red;
+  font-size: 12px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media(max-width:1050px){
+
+  .body{
+    display: block;
+  }
+
+  .rightside{
+    flex-grow: 1;
+  }
+
+  .leftside{
+    flex-grow: 1;
+  }
+
+  .form{
+    text-align: left;
+  }
+
+  /* .formInfo{
+  flex-grow: 1;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  } */
+
+  .personalInfoTicket {
+    margin: 0;
+    /* padding-left: auto;
+    padding-right: auto; */
+  }
+
+  .creditCard{
+    flex-grow: 1;
+  }
+
+  .performance{
+    flex-grow:1;
+    flex-wrap: wrap;
+  }
+
+  #ticketImage{
+    width: 75%;
+  }
+
+  h1{
+    font-size: 60%;
+  }
+
+  .personalInfoTicket{
+    /* margin: 0em;
+    padding-left: 0em; */
+    text-align: center;
+  }
+
+  div.personalInfoTicket{
+    margin-left: 0;
+  }
+
+  .personalInfoTicket div{
+    margin: 0em;
+    padding-left: 0em;
+  }
+
+  @media (max-width: 600px){
+    .form{
+      text-align: left;
+      flex-wrap: wrap;
+    }
+    /* .personalInfoForm{
+      margin-right: 0em;
+      text-align: left;
+      flex-wrap: wrap;
+      margin-right: 2em;
+      margin-left: 2.5em;
+    } */
+  }
+}

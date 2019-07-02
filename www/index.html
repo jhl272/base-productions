@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <meta charset = "utf-8" />
+  <title> BASE Productions </title>
+
+  <link href = "styles/all.css" type = "text/css" rel = "stylesheet"  />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/index.js"></script>
+  <script src="scripts/contactus.js"></script>
+</head>
+
+<body>
+
+  <!-- All images were taken from BASE's Facebook Page -->
+
+  <header id ="mainheader">
+    <nav id = "sidebar">
+      <div>
+        <a id = "logolink" href = "index.html"><img id = "logo" src = "images/logo.png" alt = "logo" /></a> </div>
+        <a class = "navlink" href = "index.html"> Home </a>
+        <a class = "navlink" href = "ticketform.html"> Tickets </a>
+        <a class = "navlink" href = "auditionform.html"> Auditions </a>
+        <a class = "navlink" href = "eboard.html"> Board </a>
+
+        <hr />
+        <div id = "socialmedianavbox">
+          <a href = "https://www.facebook.com/BASEProductionsCornell/" target="_blank"><img class = "socialmedianav" src = "images/facebook.png" alt = "facebook-icon" /></a>
+          <!-- https://www.flaticon.com/ -->
+
+          <a href = "https://www.instagram.com/baseproductions/" target="_blank"><img class = "socialmedianav" src = images/instagram.png alt = "instagram-icon" /></a>
+          <!-- https://www.flaticon.com/ -->
+
+          <a href = "https://www.youtube.com/user/BaseDance/videos?disable_polymer=1&fbclid=IwAR2dJbQ8QXsG6fOnOjF-aQXTMqFuCjRkLcq72VAUQHJwkz8gcwJ0hxTt7Y4" target="_blank"><img class = "socialmedianav" src = "images/youtube.png" alt = "youtube-icon" /></a>
+          <!-- https://www.flaticon.com/ -->
+        </div>
+      </nav>
+
+      <h1 id = "title"> BASE Productions</h1>
+    </header>
+
+
+    <div id = "middle">
+      <h2> About BASE</h2>
+
+      <div id = "submiddle">
+        <p>
+          Cornell University's <span class="special">oldest</span> and <span class="special">largest</span> co-ed dance crew, known for its dynamic student-choreographed hiphop and modern pieces. The purpose of BASE is to encompass various forms of dance in a relaxed and fun environment, to encourage members to maximize their dance and performing potential by utilizing all BASE has to offer, and to create a opportunity for members to form close friendships through a mutual love for dance. <span class="special">Pump up the BASE!</span>
+        </p>
+
+        <img id = "teamphoto" src = "images/g2.jpg" alt = "teamphoto" />
+      </div>
+
+
+      <h3>Join Us!</h3>
+      <div id = "scheduling">
+        <div>
+          <p>
+            These are our current <span class="special"> weekly practices </span>. If you ever want to just come and see what BASE is all about, come check us out at any of these provided times and locations. We hope to see you there!
+          </p>
+        </div>
+
+        <div id = "schedule">
+          <div id = "meeting-times">
+            <table>
+              <tr>
+                <th>Sunday</th>
+                <th>Monday</th>
+                <th>Wednesday</th>
+                <th>Saturday</th>
+              </tr>
+              <tr>
+                <td>5:00 - 7:00 PM</td>
+                <td>5:00 - 8:00 PM</td>
+                <td>5:00 - 8:00 PM</td>
+                <td>2:30 - 5:00 PM</td>
+              </tr>
+              <tr>
+                <td>Willard Straight Hall</td>
+                <td>Schwartz</td>
+                <td>Schwartz</td>
+                <td>Noyes</td>
+              </tr>
+            </table>
+          </div>
+
+        </div>
+      </div>
+
+      <div id = "mapbox">
+        <img id = "map" src = "images/maps.png" alt = "campusmap" />
+      </div>
+
+      <h3>Photo Gallery</h3>
+      <div class = "slideshow">
+        <div class="slideshowImageHolder">
+          <img id="slideshowImage" src="images/g1.jpg" alt="Base Productions"/>
+        </div>
+      </div>
+
+
+      <h3 id = "contactus">Contact Us</h3>
+      <form id="contactUs" class="form" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+        <h6 id="contactBlurb">
+          For up-to-date information about our club and weekly dance practice videos and concert information, please enter your email to subscribe!
+        </h6>
+        <div class="infoForm">
+          <div>
+            <label for="userName">Name: </label>
+            <input id="userName" name="userName" placeholder="Your Name" required/>
+          </div>
+          <div>
+            <span class="feedback hidden" id="nameFeedback"> Please enter your name.</span>
+          </div>
+          <div>
+            <label for="userEmail">Email: </label>
+            <input type="email" id="userEmail" name="userEmail" placeholder="Your Email" required/>
+          </div>
+          <div>
+            <span class="feedback hidden" id="emailFeedback"> Please enter a valid email.</span>
+          </div>
+          <div id = "contactdiv">
+            <label> Message: </label>
+            <textarea name="message" id="usermessage" placeholder="Enter message here..."></textarea>
+          </div>
+          <div class = "Submit">
+            <button type="submit" class="submit" id="FormSubmit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+
+    <p id = "citationlink">
+      All images were taken from the <a href= "https://www.facebook.com/BASEProductionsCornell/" target="_blank"> Facebook page</a> and all social idea icons were taken from <a href = "https://www.flaticon.com/" target="_blank"> FLATICON</a>
+    </p>
+    <footer>
+
+      <a href = "https://www.facebook.com/BASEProductionsCornell/" target="_blank"><img class = "socialmedia" src = "images/facebook.png" alt = "facebook-icon" /></a>
+      <!-- https://www.flaticon.com/ -->
+
+      <a href = "https://www.instagram.com/baseproductions/" target="_blank"><img class = "socialmedia" src = images/instagram.png alt = "instagram-icon" /></a>
+      <!-- https://www.flaticon.com/ -->
+
+      <a href = "https://www.youtube.com/user/BaseDance/videos?disable_polymer=1&fbclid=IwAR2dJbQ8QXsG6fOnOjF-aQXTMqFuCjRkLcq72VAUQHJwkz8gcwJ0hxTt7Y4" target="_blank"><img class = "socialmedia" src = "images/youtube.png" alt = "youtube-icon" /></a>
+      <!-- https://www.flaticon.com/ -->
+
+      <nav id = "bottombar">
+        <a id = "home" href = "index.html"> Home </a>
+        <a id = "tickets" href = "ticketform.html"> Tickets </a>
+        <a id ="audition" href = "auditionform.html"> Auditions </a>
+        <a id = "eboard" href = "eboard.html"> Board </a>
+      </nav>
+
+      <p id = "copyright">
+        &copy; 2018 BASE Productions
+      </p>
+
+    </footer>
+
+
+  </body>
+
+  </html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Base Productions</title>
+  <link rel="stylesheet" type="text/css" href=styles/all.css >
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/audition.js"></script>
+</head>
+<body>
+  
+  <!--Navigation-->
+  <header id="auditionHeader">
+    <nav id = "sidebar">
+      <div>
+        <a id = "logolink" href = "index.html"><img id = "logo" src = "images/logo.png" alt = "logo" /></a>
+        <!--Property of BASE Productions-->
+      </div>
+      <a class = "navlink" href = "index.html"> Home </a>
+      <a class = "navlink" href = "ticketform.html"> Tickets </a>
+      <a class = "navlink" href = "auditionform.html"> Auditions </a>
+      <a class = "navlink" href = "eboard.html"> Board</a>
+
+      <hr />
+      <div id = "socialmedianavbox">
+        <a href = "https://www.facebook.com/BASEProductionsCornell/" target="_blank"><img class = "socialmedianav" src = "images/facebook.png" alt = "facebook-icon" /></a>
+        <!-- https://www.flaticon.com/search?word=facebook -->
+
+        <a href = "https://www.instagram.com/baseproductions/" target="_blank"><img class = "socialmedianav" src = images/instagram.png alt = "instagram-icon" /></a>
+        <!-- https://www.flaticon.com/search?word=instagram -->
+
+        <a href = "https://www.youtube.com/user/BaseDance/videos?disable_polymer=1&fbclid=IwAR2dJbQ8QXsG6fOnOjF-aQXTMqFuCjRkLcq72VAUQHJwkz8gcwJ0hxTt7Y4" target="_blank"><img class = "socialmedianav" src = "images/youtube.png" alt = "youtube-icon" /></a>
+        <!-- https://www.flaticon.com/search?word=instagram -->
+      </div>
+    </nav>
+    <h1 id = "title">Auditions</h1>
+  </header>
+  <div class = "performance">
+
+    <div class = "leftside">
+      <img src = "images/baseAudition.jpg" alt="Performance" id="auditionImage"/>
+      <!--property of Base Productions-->
+    </div>
+    <div class = "rightside">
+      <p>Did you love dance growing up and are looking for a way to showcase that passion here at Cornell? Look no further than BASE PRODUCTIONS. We are auditioning for Jazz and Hip-Hop dancers. </p>
+
+      <p id = "special">
+        Here are our current audition times:
+      </p>
+
+      <span class="center">
+        Jazz: 2/4-2/8 from 5PM - 8PM in Willard Straight Hall
+      </span>
+
+      <span class="center">
+        Hip-Hop: 2/11-2/15 from 5PM - 8PM in Willard Straight Hall
+      </span>
+    </div>
+  </div>
+
+
+  <form class="form" id="auditionForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+    <h2 id="aFormHeader"> Audition Sign Up</h2>
+
+    <div class="personalInfoForm">
+      <div>
+        <label for="userNameAudition">Name: </label>
+        <input id="userNameAudition" name="userName" placeholder="Your Name" required/>
+      </div>
+      <div>
+        <span class="feedback hidden" id="nameFeedback"> Please enter your name.</span>
+      </div>
+      <div>
+        <label for="userEmailAudition">Email: </label>
+        <input type="email" id="userEmailAudition" name="userEmail" placeholder="Your Email" required/>
+      </div>
+      <div>
+        <span class="feedback hidden" id="emailFeedback"> Please enter a valid email.</span>
+      </div>
+
+      <div>
+        <label for="danceType">Type of Dance: </label>
+        <select id="danceType" name="DanceType" required>
+          <option value="">Please Select from Below</option>
+          <option>Jazz</option>
+          <option>Hip-Hop</option>
+        </select>
+      </div>
+      <div>
+        <span class="feedback hidden" id="danceError" >Please select a preferred type of dance.</span>
+      </div>
+      <div class="year">
+        <label for="year">Graduation Year:</label>
+        <select id="year" name="GradYear" required>
+          <option value="">Please Select from Below</option>
+          <option>2019</option>
+          <option>2020</option>
+          <option>2021</option>
+          <option>2022</option>
+        </select>
+      </div>
+      <div>
+        <span class="feedback hidden" id="yearFeedback">Please select your graduation year.</span>
+      </div>
+    </div>
+
+    <div id ="auditionbutton">
+      <button type="submit" class="submit" id="ticketFormSubmit">Submit</button>
+    </div>
+  </form>
+
+  <div class="FAQ">
+    <h3>Frequently Asked Questions</h3>
+    <dl>
+      <dt>What is the time commitment?</dt>
+      <dd>Base's time commmitmennt is flexible depending on how many dances you choose to dance in. Each dance practices for 1 hour/week with additional practices before our showcase.</dd>
+      <dt>Can I audition for both types of dance?</dt>
+      <dd>Yes! You are more than welcome to stay for both portions of the audition day.</dd>
+      <dt>Do you get nervous before performances?</dt>
+      <dd>We have found it super common among dancers to get butterflies before performances but this only helps elevate our performance on stage.</dd>
+    </dl>
+  </div>
+
+  <p id = "citationlink">
+    All images were taken from the <a href= "https://www.facebook.com/BASEProductionsCornell/" target="_blank"> Facebook page</a> and all social idea icons were taken from <a href = "https://www.flaticon.com/" target="_blank"> FLATICON</a>
+  </p>
+  <footer>
+
+    <a href = "https://www.facebook.com/BASEProductionsCornell/" target="_blank"><img class = "socialmedia" src = "images/facebook.png" alt = "facebook-icon" /></a>
+    <!-- https://www.flaticon.com/search?word=instagram -->
+
+    <a href = "https://www.instagram.com/baseproductions/" target="_blank"><img class = "socialmedia" src = images/instagram.png alt = "instagram-icon" /></a>
+    <!-- https://www.flaticon.com/search?word=facebook -->
+
+    <a href = "https://www.youtube.com/user/BaseDance/videos?disable_polymer=1&fbclid=IwAR2dJbQ8QXsG6fOnOjF-aQXTMqFuCjRkLcq72VAUQHJwkz8gcwJ0hxTt7Y4" target="_blank"><img class = "socialmedia" src = "images/youtube.png" alt = "youtube-icon" /></a>
+    <!-- https://www.flaticon.com/search?word=youtube -->
+
+    <nav id = "bottombar">
+      <a id = "home" href = "index.html"> Home </a>
+      <a id = "tickets" href = "ticketform.html"> Tickets </a>
+      <a id ="audition" href = "auditionform.html"> Auditions </a>
+      <a id = "eboard" href = "eboard.html"> Board </a>
+    </nav>
+
+    <p id = "copyright">
+      &copy; 2018 BASE Productions
+    </p>
+
+  </footer>
+
+</body>
+
+</html>

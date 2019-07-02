@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Base Productions</title>
+  <link rel="stylesheet" type="text/css" href=styles/all.css >
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <script src="scripts/jquery-3.3.1.min.js"></script>
+  <script src="scripts/ticket.js"></script>
+</head>
+<body>
+  <!--Navigation-->
+  <header id="ticketHeader">
+    <nav id = "sidebar">
+      <div>
+        <a id = "logolink" href = "index.html"><img id = "logo" src = "images/logo.png" alt = "logo" /></a>
+        <!--Property of BASE Productions-->
+      </div>
+      <a class = "navlink" href = "index.html"> Home </a>
+      <a class = "navlink" href = "ticketform.html"> Tickets </a>
+      <a class = "navlink" href = "auditionform.html"> Auditions </a>
+      <a class = "navlink" href = "eboard.html"> Board</a>
+
+      <hr />
+      <div id = "socialmedianavbox">
+        <a href = "https://www.facebook.com/BASEProductionsCornell/" target="_blank"><img class = "socialmedianav" src = "images/facebook.png" alt = "facebook-icon" /></a>
+        <!-- https://www.flaticon.com/search?word=facebook -->
+
+        <a href = "https://www.instagram.com/baseproductions/" target="_blank"><img class = "socialmedianav" src = images/instagram.png alt = "instagram-icon" /></a>
+        <!-- https://www.flaticon.com/search?word=instagram -->
+
+        <a href = "https://www.youtube.com/user/BaseDance/videos?disable_polymer=1&fbclid=IwAR2dJbQ8QXsG6fOnOjF-aQXTMqFuCjRkLcq72VAUQHJwkz8gcwJ0hxTt7Y4" target="_blank"><img class = "socialmedianav" src = "images/youtube.png" alt = "youtube-icon" /></a>
+        <!-- https://www.flaticon.com/search?word=youtube -->
+      </div>
+    </nav>
+
+    <h1 id = "title"> Tickets</h1>
+
+  </header>
+  <div class = "performance">
+
+    <div class = "leftside">
+      <img src = "../content/images/p9.jpg" alt="Performance" id="ticketImage"/>
+      <!--property of Base Productions-->
+    </div>
+    <div class = "rightside">
+      <p>Alright ladies and gents... It's that time of the year again! Get ready for Cornell's longest running annual showcase, <span class ="special">BASE in Yo Face!</span> There will be phenomenal music, dances, and tons of base in your face so you don't want to miss it!! In addition to our incredible <span class ="special">8 Hip-Hop </span> and <span class ="special">7 Contemporary</span> routines, we are happy to say that we will be having guest appearances from <span class ="special">Men of Last Call</span> and <span class ="special">Bhangra</span>!! Get your tickets today pay at the door in cash!! </p>
+    </div>
+  </div>
+
+  <form class="form" id="ticketForm" method="post" action="https://www.cs.cornell.edu/courses/cs1300/2018fa/submit.php" novalidate>
+    <h2 id="tFormHeader"> Ticket Purchase Form </h2>
+    <h6 class = "topblurb"> Purchase your tickets for the annual showcase of BASE in your FACE! </h6>
+    <h6 class = "blurb"> <span>Date:</span> April 20, 2019</h6>
+    <h6 class = "blurb"> <span>Location:</span> Schwartz Performing Arts Center</h6>
+    <h6 class = "blurb"> <span>Time:</span> 7PM - 8PM</h6>
+    <h6 class = "blurb"> <span>Price:</span> 1 for $8, 2 for $15</h6>
+    <div class="personalInfoForm">
+      <div>
+        <label for="userName">Name: </label>
+        <input id="userName" name="userName" placeholder="Your Name" required/>
+      </div>
+      <div>
+        <span class="feedback hidden" id="nameFeedback"> Please enter your name.</span>
+      </div>
+      <div>
+        <label for="userEmail">Email: </label>
+        <input type="email" id="userEmail" name="userEmail" placeholder="Your Email" required/>
+      </div>
+      <div>
+        <span class="feedback hidden" id="emailFeedback"> Please enter a valid email.</span>
+      </div>
+      <div>
+        <label for="numTickets">Number of Tickets: </label>
+        <input type="number" id="numTickets" name="numTickets" min="1" required/>
+      </div>
+      <div>
+        <span class="feedback hidden" id="ticketFeedback"> Please choose at least one ticket.</span>
+      </div>
+      <div>
+        <label for="pickupLocation">Ticket pickup location: </label>
+        <select id = "pickupLocation">
+          <option>Email </option>
+          <option>At the door</option>
+        </select>
+      </div>
+    </div>
+    <div class = "tFormSubmitContainer">
+      <button type="submit" class="submit" id="tFormSubmit">Submit</button>
+    </div>
+  </form>
+
+
+  <p id = "citationlink">
+    All images were taken from the <a href= "https://www.facebook.com/BASEProductionsCornell/" target="_blank"> Facebook page</a> and all social idea icons were taken from <a href = "https://www.flaticon.com/" target="_blank"> FLATICON</a>
+  </p>
+  <footer>
+
+    <a href = "https://www.facebook.com/BASEProductionsCornell/" target="_blank"><img class = "socialmedia" src = "images/facebook.png" alt = "facebook-icon" /></a>
+    <!-- https://www.flaticon.com/search?word=instagram -->
+
+    <a href = "https://www.instagram.com/baseproductions/" target="_blank"><img class = "socialmedia" src = images/instagram.png alt = "instagram-icon" /></a>
+    <!-- https://www.flaticon.com/search?word=facebook -->
+
+    <a href = "https://www.youtube.com/user/BaseDance/videos?disable_polymer=1&fbclid=IwAR2dJbQ8QXsG6fOnOjF-aQXTMqFuCjRkLcq72VAUQHJwkz8gcwJ0hxTt7Y4" target="_blank"><img class = "socialmedia" src = "images/youtube.png" alt = "youtube-icon" /></a>
+    <!-- https://www.flaticon.com/search?word=youtube -->
+
+    <nav id = "bottombar">
+      <a id = "home" href = "index.html"> Home </a>
+      <a id = "tickets" href = "ticketform.html"> Tickets </a>
+      <a id ="audition" href = "auditionform.html"> Auditions </a>
+      <a id = "eboard" href = "eboard.html"> Board </a>
+    </nav>
+
+    <p id = "copyright">
+      &copy; 2018 BASE Productions
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
